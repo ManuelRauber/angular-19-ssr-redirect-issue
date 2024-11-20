@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "install": "(cd v18 && npm i) && (cd v18ssr && npm i) && (cd v19 && npm i) && (cd v19ssr && npm i) && (cd v19ssrServerRouting && npm i)",
+    "start": "concurrently \"cd v18 && npm start\" \"cd v18ssr && npm start\" \"cd v19 && npm start\" \"cd v19ssr && npm start\" \"cd v19ssrServerRouting && npm start\" "
+  },
+  "devDependencies": {
+    "concurrently": "~9.1.0"
+  }
+}
